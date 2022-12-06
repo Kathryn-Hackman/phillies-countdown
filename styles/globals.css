@@ -25,6 +25,11 @@ a {
   src: local("MLBPhiladelphiaPhillies1980"), url("../src/fonts/MLBPhiladelphiaPhillies1980.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Baseball";
+  src: local("Baseball"), url("../src/fonts/barney-script-font/BarneyScriptPersonalUseRegular-axnyx.otf") format("truetype");
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
