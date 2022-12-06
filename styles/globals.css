@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
 html,
 body {
   padding: 0;
@@ -13,6 +18,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Phillies";
+  src: local("MLBPhiladelphiaPhillies1980"), url("../src/fonts/MLBPhiladelphiaPhillies1980.ttf") format("truetype");
 }
 
 @media (prefers-color-scheme: dark) {
