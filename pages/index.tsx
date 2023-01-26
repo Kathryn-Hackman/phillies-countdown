@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 export default function Home() {
 
   const players = {
-    0: "Phillie Phanatic",
+    0: "Game Day!",
     1: "Richie Ashburn",
     2: "Granny Hammer",
     3: "Bryce Harper",
@@ -90,7 +90,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState({})
 
   const calculateTimeLeft = () => {
-    const firstGame: any = new Date('2/24/2023')
+    const firstGame: any = new Date('2/25/2023')
     const rightNow: any = new Date()
     let difference: number = firstGame - rightNow
     let timeLeft = {}
