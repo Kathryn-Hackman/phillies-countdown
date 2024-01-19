@@ -90,7 +90,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState({})
 
   const calculateTimeLeft = () => {
-    const firstGame: any = new Date('2/25/2023')
+    const firstGame: any = new Date('2/25/2024')
     const rightNow: any = new Date()
     let difference: number = firstGame - rightNow
     let timeLeft = {}
@@ -122,38 +122,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="pt-12 text-center font-['Phillies'] text-5xl">Phirst game countdown</h1>
-      <div className="p-16 font-['Baseball'] text-center text-xl">
+      <div className="pt-16 pb-4 font-['Baseball'] text-center text-2xl">
         <h2>{players[Object.values(timeLeft)[0] as keyof typeof players]}</h2>
       </div>
-      <main className="grid grid-cols-4 gap-1 place-items-center">
-        <div>
-          <div className="text-2xl box-border bg-retro-red p-4 rounded border-2">
-            <h1>{JSON.stringify(Object.values(timeLeft)[0])}</h1>
-          </div>
-          <h4 className="p-2 text-lg text-center font-['Baseball']">days</h4>
+      <div className="grid grid-cols-1 place-items-center">
+        <div className="text-6xl box-border bg-retro-red p-14 rounded border-2">
+          <h1>{JSON.stringify(Object.values(timeLeft)[0])}</h1>
         </div>
-
+          <h4 className="pt-3 pb-36 text-2xl text-center font-['Baseball']">days</h4>
+      </div>
+      <div className="grid grid-cols-3 gap-1 place-items-center">
         <div>
           <div className="text-2xl text-center bg-powder-blue box-border #6F263D p-4 rounded border-2">
             <h1>{JSON.stringify(Object.values(timeLeft)[1])}</h1>
           </div>
-          <h4 className="p-2 text-lg text-center font-['Baseball']">hours</h4>
+          <h4 className="p-3 text-xl text-center font-['Baseball']">hours</h4>
         </div>
 
         <div>
           <div className="text-2xl text-center bg-retro-red box-border #6F263D p-4 rounded border-2">
             <h1>{JSON.stringify(Object.values(timeLeft)[2])}</h1>
           </div>
-          <h4 className="p-2 text-lg text-center font-['Baseball']">minutes</h4>
+          <h4 className="p-3 text-xl text-center font-['Baseball']">minutes</h4>
         </div>
         
         <div>
           <div className="text-2xl text-center bg-powder-blue box-border #6F263D p-4 rounded border-2">
             <h1>{JSON.stringify(Object.values(timeLeft)[3])}</h1>
           </div>
-          <h4 className="p-2 text-lg text-center font-['Baseball']">seconds</h4>
+          <h4 className="p-3 text-lg text-center font-['Baseball']">seconds</h4>
         </div>
-      </main>
+      </div>
     </div>
   )
 }
