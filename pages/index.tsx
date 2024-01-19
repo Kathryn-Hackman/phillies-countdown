@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
     6: "Ryan Howard",
     7: "Pedro Feliz",
     8: "The Flyin' Hawaiian",
-    9: "Clearwater, FL",
     10: "Larry Bowa",
     11: "J-Roll",
     12: "Kyle Schwarber",
@@ -41,50 +39,18 @@ export default function Home() {
     33: "Cliff Lee",
     34: "Doc Halladay",
     35: "Cole Hamels",
-    36: "Clearwater, FL",
-    37: "Clearwater, FL",
     38: "Curt Schilling",
-    39: "Clearwater, FL",
-    40: "Clearwater, FL",
     41: "Charlie Manuel",
     42: "Jackie Robinson",
-    43: "Clearwater, FL",
-    44: "Clearwater, FL",
     45: "Zack Wheeler",
     46: "Jose Alvarado",
-    47: "Clearwater, FL",
-    48: "Clearwater, FL",
-    49: "Clearwater, FL",
     50: "Jamie Moyer",
-    51: "Choooooch",
-    52: "Clearwater, FL",
-    53: "Clearwater, FL",
+    51: "Choooooch!",
     54: 'Brad "Lights Out" Lidge',
     55: "Ranger Suarez",
-    56: "Clearwater, FL",
-    57: "Clearwater, FL",
     58: "Seranthony Dominguez",
-    59: "Clearwater, FL",
-    60: "Clearwater, FL",
-    61: "Clearwater, FL",
-    62: "Clearwater, FL",
-    63: "Clearwater, FL",
     64: "Andrew Bellatti",
-    65: "Clearwater, FL",
-    66: "Clearwater, FL",
-    67: "Clearwater, FL",
-    68: "Clearwater, FL",
-    69: "Clearwater, FL",
-    70: "Clearwater, FL",
-    71: "Clearwater, FL",
-    72: "Clearwater, FL",
-    73: "Clearwater, FL",
-    74: "Clearwater, FL",
     75: "Connor Brogdon",
-    76: "Clearwater, FL",
-    77: "Clearwater, FL",
-    78: "Clearwater, FL",
-    79: "Clearwater, FL"
   }
 
   const [timeLeft, setTimeLeft] = useState({})
@@ -122,7 +88,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="pt-12 text-center font-['Phillies'] text-5xl">Phirst game countdown</h1>
-      <div className="pt-16 pb-4 font-['Baseball'] text-center text-2xl">
+      <div className="pt-12 pb-4 font-['Baseball'] text-center text-2xl">
+        <h2>🌴 Clearwater, FL ☀️</h2>
+      </div>
+      <div className="pt-14 pb-4 font-['Baseball'] text-center text-3xl">
         <h2>{players[Object.values(timeLeft)[0] as keyof typeof players]}</h2>
       </div>
       <div className="grid grid-cols-1 place-items-center">
