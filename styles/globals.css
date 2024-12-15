@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 
 html,
+head {
+  backgound: rgb(107, 172, 228, 0.5);
+}
 body {
+  background:rgb(107, 172, 228, 0.5);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
