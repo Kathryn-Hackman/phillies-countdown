@@ -56,7 +56,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState({})
 
   const calculateTimeLeft = () => {
-    const firstGame: any = new Date('2/22/2025')
+    const firstGame: any = new Date('3/26/2026')
     const rightNow: any = new Date()
     let difference: number = firstGame - rightNow
     let timeLeft = {}

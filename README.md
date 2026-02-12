@@ -1,8 +1,8 @@
-# 2024 Phillies Phirst Game Countdown
+# 2026 Phillies Phirst Game Countdown
 
 https://phillies-countdown.vercel.app/
 
-Can't wait for spring training? Check exactly how much time we have left using the countdown link above. Some days will even have the name of a Phillie who wears or wore the corresponding jersey number. Go Phils!
+Can't wait for the 2026 Phillies season to start? Check exactly how much time we have left using the countdown link above. Some days will even have the name of a Phillie who wears or wore the corresponding jersey number. Go Phils!
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
